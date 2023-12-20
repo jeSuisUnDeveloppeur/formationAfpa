@@ -1,0 +1,202 @@
+html {
+    box-sizing:border-box; 
+    outline: none;
+}
+
+body {
+    background-color: rgb(0, 109, 119);
+    margin:0% 0%;
+}
+
+header {
+    text-align: center;  
+}
+
+header img {
+    width:200px;
+}
+
+header nav{
+    background-color: rgb(88, 47, 14);
+    margin-left:13%;
+    margin-right: 18%;
+    padding: 10px;
+    }
+header nav a {
+    text-decoration: none;
+    font-size: 1.6em;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(88, 47, 14);
+    margin-right: 10%;
+    transition:
+        background-color 0.6s ease,
+        padding 0s ease ;
+    }
+
+main img {
+    border-radius: 10px;
+    margin-bottom: 10px ;
+    padding:0%;
+    width: 100%;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 80%;
+}
+
+aside {
+    background-color: white;
+    margin-bottom: 5%;
+    width: 30%;
+    padding:2%;
+    margin-right: 10%;
+    margin-left: 0%;
+}
+
+section {
+    margin: 0% 4%;
+    width: 70%;
+    padding: 10px;
+    background: rgba(5, 122, 133, 0.733);
+}
+
+section p {
+    color:white;
+    padding: 10px;
+}
+
+h1,h2,h3 {
+    text-align: center;
+    font-size: 1.4em;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: white;
+    border: solid rgb(88, 47, 14) ;
+    border-radius: 10px;
+    background-color: rgb(88, 47, 14);
+    padding:5px;
+}
+
+main > section > h2
+{
+ width : 105%; 
+}
+
+header nav a:hover {
+    background-color:#a79189;
+    padding:7px;
+    }
+
+@media screen and (min-width:560px) and (max-width:960px){
+    html{
+        background-color: white;
+    }
+    body{
+        width:80%;
+    }
+    header nav {
+    padding:2%;
+    width:96%;
+    margin: 0%;
+   }
+   header nav a:hover{
+       padding: 10px;
+       background-color: #a79189;
+   }
+
+   header nav a {
+    font-size: 1.2rem;
+    margin-right:5%;
+    margin-left:3%;
+    padding:0px;
+    background-color : rgb(88, 47, 14);
+    transition : padding 0s ease;
+    transition : background-color 0.6s ease;
+    }
+
+   main {
+    display:flex;
+    flex-direction: column;
+    width:100%;
+   }
+   section {
+    align-self:left;
+   }
+   main section h2{
+       width: 96%;
+   }
+   aside {
+    width: 100%;
+    align-self:flex-start;
+    margin-bottom: 3%;
+    }
+    main aside h2{
+        width:90%;
+    }
+
+}
+   
+@media screen and (max-width:560px){
+    aside {
+        display: none;        
+    }
+    
+    header nav a {
+        font-size: 1.3rem;
+        background-color : rgb(88, 47, 14);
+        width:100%;
+        margin-bottom: 4%;
+        margin-left: 0%;
+        margin-right: 0%;
+        transition:
+            background-color 0.6s ease,
+            padding 0s ease;
+    }
+
+    header nav a:hover{
+        padding:20px;
+        background-color: #a79189;
+    }
+    header nav{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+        padding:0%;
+    }
+    main{
+        display: flex;
+        justify-content: flex-start;
+        align-content: center;
+        width: 100%;
+        margin:2%;
+    }
+    section{
+        width: 85%;
+    }
+    section h2{
+        width:100%;
+        font-size: 1.3rem;
+    }
+    img{
+        width:100%;
+    }
+    section p {
+        text-align: justify;
+        align-items: center;
+    }
+    main section h2{
+        width:90%;
+    }
+
+}
+
+
+
+
+
+
+
